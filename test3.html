@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">       
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffff;
+}
+#myBtn {
+    width: 50px;height: 50px;padding: 7px 10px;border-radius: 25px;font-size: 20px;
+	        border:none;color: black;bottom: 20px;position: fixed;text-align: center;	
+  display: none; /* Hidden by default */
+  position: absolute; /* Fixed/sticky position */
+  top: 1490px; /* Place the button at the bottom of the page */
+  right: 660px; /* Place the button 30px from the right */
+  z-index: 1; /* Make sure it does not overlap */  
+  outline: none; /* Remove outline */
+  background-color:#e6e6e6;/* Set a background color */  
+  cursor: pointer; /* Add a mouse pointer on hover */    
+}
+
+#myBtn:hover {
+    background-color: #d9d9d9; /* Add a dark-grey background on hover */
+  color:black;
+  font-size:22px;
+}
+.footer
+{
+	column-count: 2;
+	column-gap: 90px;	
+       
+	background-color: #222;
+	height: auto;
+	padding-top:40px;
+	padding-bottom: 40px;
+	padding-left:100px;
+}
+/*in footer css for text - "created by" line */
+.footerf1
+{
+	color: white;
+	font-size: 20px;
+}
+/*in footer css for - "devcorps...." line*/
+.footerf2
+{	
+	color: #9c22bb;
+	font-size: 20px;
+}
+.navbar {
+  overflow: hidden;
+  float:right;
+  margin-top: 45px;
+  margin-right: 22px;  
+  border-radius: 4px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  background-color:#1111;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+#btn1
+{
+    margin-left: 38.9%;
+}
+#btn1,#btn2
+{
+    font-size: 16px;
+    font-weight: bold;      
+  color: #8000ff;  
+  border: none;    
+  padding: 13px 15px;  
+  font-family: inherit;    
+  margin-right: 2px;  
+}
+#btn1:hover
+{ 
+    text-decoration: underline;
+}
+#btn2:hover
+{    
+    text-decoration: underline;
+}
+#ngobtn
+{
+    margin-top: -94px;margin-left: 910px;color: black;
+}
+#ngobtn:hover
+{
+    color: #8000ff;  
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;  
+  color: white;
+  padding: 14px 16px;
+  background-color: #8000ff;
+  font-family: inherit;
+  margin: 0;
+}
+.dropbtn2
+{
+    font-size: 16px;           
+  color: #8000ff;
+  border: 1.6px solid #111;
+  border-radius: 4px;
+  padding: 13px 15px;
+  background-color: #ffff;
+  font-family: inherit;  
+  margin-right: 10px;
+}
+.dropbtn2:hover
+{
+    color: #ffff;
+    border: 1.6px solid #8000ff;
+  background-color:#8000ff;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#9933ff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 110px;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;  
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  /* The alert message box */
+  .alert {  
+  margin: 75px 20px auto 53px;
+  margin-left: 30px;
+  height: 30px;
+  background-color: #333;
+  padding-top: 10px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  border: 2px solid #1111;
+  border-radius: 3px;    
+}
+.alert:hover
+{     
+  text-decoration: underline;
+}
+#info:hover{
+    text-decoration: underline;    
+}
+#i1:hover
+{
+    font-size:20px;    
+}
+#qllist{width:50%}
+#qllist li:hover
+{    
+    color:#d9d9d9;
+    text-decoration:underline;
+}
+</style>
+</head>
+<body>    
+<div class="navbar">
+  <div class="dropdown">      
+    <button class="dropbtn2">Contact Us</button>
+  </div></div>
+  <div class="navbar">
+    <div class="dropdown"> 
+        <button class="dropbtn">Explore
+            <i class="fa fa-caret-down"></i>
+          </button>
+    <div class="dropdown-content">        
+        <a href="statistics.html"  >Statistics</a>
+        <a href="prevention.html"  >Measures</a>
+        <a href="help.html" > Help</a>
+        <a href="faq.php" > FAQs</a>
+    </div>
+  </div> 
+</div>
+<a href="home.php"><img src="images/logo2.png" width="26%" style="margin-left: 10px;height: 150px;z-index: -10px;"></a>
+<a href="#" style="text-decoration: none;"><h4 id="ngobtn" >Support for NGO</h4></a>
+ <!--alert box-->
+ <div class="alert">     
+    Know how can we help you in the covid pandemic. <a style="color: white;" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+  </div>
+  <h2 style="text-align: center;margin-top: 70px;font-size: 26px;">Know all about covid info and events in India</h2>
+  <div  style="column-count: 4;column-span: none;margin-left: 290px;margin-top: 70px;font-weight: bold;font-size: 18px;padding-bottom: 60px;">
+    <div id="info"><i class="fas fa-chart-line"></i> stats</div>
+    <div id="info" style="margin-left: -100px;"><i class="fas fa-shield-alt"></i> measures</div>
+    <div id="info" style="margin-left: -150px;"><i class="fas fa-prescription"></i> symptoms</div>
+    <div id="info" style="margin-left: -200px;"><i class="far fa-question-circle"></i> community contributions</div>
+  </div>
+</div>
+  
+      <!--scroll to top button-->
+      <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>     
+      <script>
+          //Get the button:
+  mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+      </script>
+       <!--stats-->
+    <div style="margin-left:53px;margin-right: 33px;margin-top: 0px;background-color: #f5f5f5;padding: 10px;margin-bottom: 0px;">
+        <p style="font-size: 22px;text-align: center;margin-left: -40px;font-weight: bold;color: #8c1aff;">Cases in India
+          <div style="column-count: 4;margin-left: 100px;font-weight: bold;margin-top: 40px;  ">
+            <div style="color: green;border-right: 2px solid #222;margin-right: 80px;">Confirmed
+              <p style="color: black;">2,35,540 +</p>
+            </div>
+            <div style="color: blue;border-right: 2px solid #222;margin-right: 80px;">Active
+              <p style="color: black;">1,10,960 +</p>
+            </div>
+            <div style="color: black;border-right: 2px solid #222;margin-right: 80px;">Recovered
+              <p style="color: black;">1,09,461 +</p>
+            </div>
+            <div style="color: red;">Deceased
+              <p style="color: black;">6,347 +</p>
+            </div>        
+          </div>
+          <p style="font-size: 17px;margin-left: 95px;color:black"><br>Source: <a style="text-decoration: none;color: blue;" href="https://www.mohfw.gov.in/">https://www.mohfw.gov.in/</a></p>
+        </p>
+      </div>
+  <div>
+  <div style="background-color: #1111;padding-top: 20px;margin-left: 0px;margin-right: 0px;padding-bottom: 30px;margin-bottom: 20px;margin-top: 20px;">
+    <h1 style="text-align: center;margin-top: 70px;margin-left: 20px;">DevCorps Support For NGOs</h1>
+    <div  style="column-count: 3;column-span: none;margin-left: 260px;margin-top: 70px;font-weight: bold;font-size: 18px;padding-bottom: 40px;">        
+        <div id="info" style="margin-left: -20px;">Hiring Volunteers make easy <i class="fas fa-angle-right"></i></div>
+        <div id="info" style="margin-left: -49px;">Raise Funds faster <i class="fas fa-angle-right"></i></div>
+        <div id="info" style="margin-left: -160px;">Resource collection just got organised <i class="fas fa-angle-right"></i></div>
+      </div>
+      <a href="#"><button id="btn1">Learn How?</button></a>
+      <a href="#"><button id="btn2">Get in touch</button></a> 
+  </div>
+  <div class="footer">
+    <h2 style="color: white;font-size: 36px;column-span: none;"> Contact Us!</h2>
+    
+    <br><br>
+    <h5 style="width: 380px;color: #a6a6a6;font-size: 20px">For any feedback, suggestion or help please drop a message we will get back to you soon.</h5>
+      <h5 style="width: 380px;color: #a6a6a6;font-size: 20px;padding-bottom:10px">We eagerly await to hear from you!</h5><br><br>
+    <form action="" method="post">
+      <label for="tname" style="padding-top: 10px;color:white;font-size: 18px">Name: </label><br>
+      <input id="tname"  style="border:none;height: 30px;padding-left:4px" type="text" name="name" placeholder="Enter Name here"><br><br>
+      <label for="tpno" style="padding-top: 70px;color:white;font-size: 18px">Email: </label><br>
+      <input id="tpno" style="border:none;height: 30px;padding-left:4px" type="email" name="email" placeholder="Email"><br><br>
+      <label for="tmsg" style="padding-top: 10px;color:white;font-size: 18px">Message: </label><br>
+      <textarea id="tmsg"  name="msg"  style="font-size: 16px;resize: none;width: 65%;height: 70px;padding-left:4px" placeholder="Enter your valuable suggestion!" required=""></textarea><br>
+      <input type="submit" name="submit" style="border:none;background-color: #0066ff;color:white;font-weight: bold;border-radius: 10px;margin-top: 20px;height: 40px;width: 23%;">
+      <h3 style="color: white"> <?=$result; ?></h3>
+      </form>
+      
+  </div>
+  <div  style="background-color: black;padding-bottom: 20px;border-bottom-left-radius:8px;border-bottom-right-radius: 8px;text-align:center">	
+  <div class="footerf2" style="padding-top:30px;text-align:left;padding-left:40px;color:grey;font-size:18px">	
+      <!--Back to top text-->
+      <div style="text-align:center;margin-left:-73px;padding-top:10px;padding-bottom:20px;color:#e6e6e6;font-size:16px">
+          Back to top
+      </div>    
+      <div style="column-count:3;column-span:none;padding-bottom:10px;padding-top:15px;">
+      <!--about section-->
+      <h3 style="color:#8c1aff;font-size:22px;margin-top:10px">
+          Our Aim:        
+      </h3>
+      <p style="width:100%;font-size:15px;color:#555">
+      This Site gives a platform for users to find about covid-19 stats provide an in-short description of every necessary help
+      in the duration of pandemic, though we primarily focus on bringing non-profit organisations together and also gathering volunteers
+      and funds for them, giving viewers a glimpse of thier hard-work and making gathering of funds and resources for them easier.
+      </p>    
+      <!--quick links-->      
+      <h3 style="color:#8c1aff;font-size:22px;margin-top:0px;margin-left:115px">
+          Quick Links 
+      </h3>
+      <ul id="qllist" style="list-style-type:none;margin-left:132px">
+          <a style="text-decoration:none"><li style="margin-left: -37px;">About Us</li></a>
+          <a style="text-decoration:none"><li style="margin-left: -52px;">How we work</li></a>
+          <a style="text-decoration:none"><li style="margin-left: -67px;">Services for NGO's</li></a>
+          <a style="text-decoration:none"><li style="margin-left: -52px;">Privacy policy</li></a>       
+          <a style="text-decoration:none"><li style="margin-left: -55px;">Refrence Links</li></a>     
+      </ul>
+      <p style="padding-top: 0px;padding-bottom: 10px;color: #8c1aff;font-size: 22px">Our Social-media Handles :</p>    
+    <a href="https://www.facebook.com/rachitsingh0904/" style="color:white;"><i id="i1" class="fab fa-facebook-square"></i></a>
+    <a href="https://twitter.com/rachit0904" style="color: white;padding-left: 20px"><i id="i1" class="fab fa-twitter"></i></a>	
+    <a href="https://www.linkedin.com/in/rachit-singh-53575117a/" style="color: white;padding-left: 20px"><i id="i1" class="fab fa-linkedin"></i></a>	
+      <a href="mailto:singhrachit569@gmail.com?cc=narendrarewar@gmail.com" style="color: white;padding-left: 20px"><i id="i1" class="fas fa-envelope"></i></a>	    
+    <p style="padding-top:20px;width:35%;font-size: 22px;border:none">Get in touch !</p>  
+      </div>    
+      <!--Copyright claimer-->    
+      <p style="padding-top:10px;color:#a6a6a6">
+     Copyright <i class="far fa-copyright"></i> Devcorps.inc 2020
+    </p>
+  </div>	
+  </div>
+  </div>
+</body>
+</html>
